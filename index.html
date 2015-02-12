@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ambient IDE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="bower_components/ambient/dist/css/ambient.min.css"/>
+    <!-- Ambient framework -->
+
+    <script src="js/HTMLOutliner.js"></script>
+    <script src="js/HTMLParser.js"></script>
+    <script src="js/frontend.js"></script>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 350px;
+            resize: vertical;
+        }
+        ol {
+            padding-left: 25px;
+        }
+
+        #output > ol {
+            padding-left: 0;
+        }
+
+        ol.outline {
+            list-style-type: none;
+        }
+
+        ol.outline.shadow {
+            border-left: 1px solid gray;
+            margin: 2px;
+            padding-left: 10px;
+        }
+
+        span.sec_number {
+            display: inline;
+            font-weight: bold;
+            padding-right: 1ex;
+        }
+
+        span.sec_prefix {
+            display: none;
+        }
+
+        #output[data-numbering="0"] span.sec_number {
+            display: none;
+        }
+
+        #output[data-numbering="2"] span.sec_prefix {
+            display: inline;
+        }
+
+        li.root {
+            display: none;
+        }
+
+        #output.show_roots li.root {
+            display: block;
+        }
+
+        li.root > span {
+            color: gray;
+            font-variant: small-caps;
+        }
+
+        span.no_title {
+            font-style: italic;
+        }
+
+        span.details {
+            display: none;
+            color: gray;
+            padding-left: 1ex;
+        }
+
+        #output.show_elements span.details {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Ambient editor
+    </h1>
+    <p>
+        Initial visual editor for scaffolding HTML5
+    </p>
+</header>
+<main>
+    <article>
+        <h1>
+            Document outliner for <a href="http://ionlyseespots.github.io/ambient-design/index.html">Ambient</a>
+        </h1>
+        <p>
+            0.0.1
+        </p>
+        <section id="input" am-padding>
+            <h2>
+                HTML5
+            </h2>
+            <div class="am-text-right" am-margin="bottom">
+                <button onclick="outline();">&gt;</button>
+            </div>
+
+            <hr />
+
+            <textarea id="direct_input">&lt;body&gt;
+                &lt;h4&gt;Apples&lt;/h4&gt;
+                &lt;p&gt;Apples are fruit.&lt;/p&gt;
+                &lt;section&gt;
+                &lt;h2&gt;Taste&lt;/h2&gt;
+                &lt;p&gt;They taste lovely.&lt;/p&gt;
+                &lt;h6&gt;Sweet&lt;/h6&gt;
+                &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+                &lt;blockquote cite="me"&gt;But green ones are better!&lt;/blockquote&gt;
+                &lt;h1&gt;Color&lt;/h1&gt;
+                &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+                &lt;/section&gt;
+                &lt;/body&gt;</textarea>
+            <input id="url_input" type="hidden" value=""/>
+            <input type="file" id="file_input"/>
+        </section>
+        <aside id="outline" am-padding>
+            <h2>
+                Outline Panel
+            </h2>
+            <div class="options" id="output_options">
+                <select id="numbering">
+                    <option value="0">None</option>
+                    <option value="1" selected="">Simple</option>
+                    <option value="2">Nested</option>
+                </select>
+                <input id="show_elements" type="checkbox"/><label for="show_elements">Elements</label>
+            </div>
+            <div id="output" data-numbering="1">
+            </div>
+        </aside>
+    </article>
+</main>
+<footer>
+    <p>
+        Ambient IDE
+    </p>
+</footer>
+<script src="js/options.js"></script>
+</body>
+</html>

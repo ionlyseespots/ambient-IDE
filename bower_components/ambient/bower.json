@@ -1,0 +1,41 @@
+{
+  "name": "ambient",
+  "version": "1.2.13",
+    "dependencies": {
+    "normalize-css": "latest"
+    },
+  "description": "Ambient is a lightweight and modular HTML5 UI development methodology",
+  "main": [
+    "dist/css/*",
+    "less/*"
+  ],
+  "keywords": [
+    "css3",
+    "html5",
+    "flexbox",
+    "front-end",
+    "framework",
+    "layout",
+    "grid"
+  ],
+  "authors": [
+    "Ken Buras <@av8boogie>"
+  ],
+  "license": "MIT",
+  "homepage": "http://ionlyseespots.github.io/ambient-design/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "admin-shell",
+    "ambient",
+    "assets",
+    "layout",
+    "design-patterns",
+    "docs",
+    "examples",
+    "less/ambient.min.css",
+    "index.html",
+    "apple-touch-icon.png"
+  ]
+}
