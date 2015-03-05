@@ -1,8 +1,8 @@
 # Ambient
 
-[Ambient] (http://ionlyseespots.github.io/ambient-design) is semantic layout.
+[Ambient] (http://ionlyseespots.github.io/ambient-design) is a CSS framework.
 
-Back to basics. Ambient is a lightweight and modular HTML5 UI development methodology. Ambient make use of HTML5 sections & outlines for semantic scaffolding and CSS3 attributes on elements for page layout.
+Back to basics. A lightweight and modular HTML5 UI development methodology. Ambient is a CSS framework that makes use of HTML5 elements & CSS3 attributes to layout the document outline.
 
 Ambient is ready to adopt whatever your design or style is. Feel free to use HTML, whenever and wherever you like. Build the intent of your content. You can add additional layout values as well as extend child attributes to your scaffolding to gradually build a hierarchy that defines your layout.
 
@@ -16,30 +16,30 @@ View scaffolding: http://ionlyseespots.github.io/ambient-design/layout/index.htm
 
 Install with [Bower] (http://bower.io/): bower install ambient
 
-Read the [Getting started page] (http://ionlyseespots.github.io/ambient-design/docs/index.html) for information on getting started.
+Read the [Get started page] (http://ionlyseespots.github.io/ambient-design/docs/index.html) for information and examples on getting started.
 
-> Please note that source is the most current development (unstable) version of Ambient
+> current release cycle: Boba Fett v1.3.2
 
 ## Development
 
 This project is in early development.
 
-Ambient make use of HTML5 sections & outlines for semantic scaffolding and CSS3 attributes on elements for page layout. 
+* Website: http://ionlyseespots.github.io/ambient-design
+* Docs: http://ionlyseespots.github.io/ambient-design/docs
+* Semantic: http://ionlyseespots.github.io/ambient-design/layout
+* Layout: http://ionlyseespots.github.io/ambient-design/design-patterns
+* Colors: http://ionlyseespots.github.io/ambient-design/design-patterns/colors.html 
 
-* Website: http://ionlyseespots.github.io/ambient-design/index.html
-* Docs: http://ionlyseespots.github.io/ambient-design/docs/index.html
-* Semantic: http://ionlyseespots.github.io/ambient-design/layout/index.html
-* Layout: http://ionlyseespots.github.io/ambient-design/design-patterns/index.html
+## Road map
+* Roadmap: http://ionlyseespots.github.io/ambient-design/roadmap
+
+## Ambient IDE
+
+* Document outliner: http://ionlyseespots.github.io/ambient-IDE/
 
 ## Usage
 
-Once you have your [starter HTML5 template](http://ionlyseespots.github.io/ambient-design/examples/starter-template/index.html) linked to the Ambient CSS, start building the intent of your content.
-
-## Background
-
-Sometimes I have UI that plays well with a traditional grid paradigm but sometimes I need a more complex grid. This can mean learning grid classes for structure with floats, columns and media queries.
-
-I liked reusing classes for design but I became frustrated with classes for structure that were not very clear. I wanted to get back to basics with HTML5 and create a methodology to layout the document outline. The layout should be dynamic, and fit any range of viewports. 
+Feel free to link to the Ambient CSS file and use HTML, whenever and wherever you like. We have created a [starting HTML5 example](http://ionlyseespots.github.io/ambient-design/examples/starter-template/index.html) for you to start building the intent of your content.
 
 ## Inspiration
 

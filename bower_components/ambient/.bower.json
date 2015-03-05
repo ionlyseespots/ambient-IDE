@@ -1,6 +1,6 @@
 {
   "name": "ambient",
-  "version": "1.2.14",
+  "version": "1.3.2",
   "dependencies": {
     "normalize-css": "latest"
   },
@@ -34,18 +34,19 @@
     "design-patterns",
     "docs",
     "examples",
+    "roadmap",
     "less/ambient.min.css",
     "index.html",
     "apple-touch-icon.png"
   ],
-  "_release": "1.2.14",
+  "_release": "1.3.2",
   "_resolution": {
     "type": "version",
-    "tag": "1.2.14",
-    "commit": "4b6fdbfec657785f945798122c09e24fe6226e4b"
+    "tag": "1.3.2",
+    "commit": "efb1707f52a4eb968cf6278e46406a0f6073336b"
   },
   "_source": "git://github.com/ionlyseespots/ambient-design.git",
-  "_target": "~1.2.14",
+  "_target": "~1.3.2",
   "_originalSource": "ambient",
   "_direct": true
 }

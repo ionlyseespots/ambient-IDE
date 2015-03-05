@@ -1,30 +1,39 @@
-//
-// Descriptive Variables
-// --------------------------------------------------
+@am-root-font-size:  112.5%; // Golden Ratio Typography Calculator http://www.pearsonified.com/typography/
+@am-root-line-height:  1.65;
+@am-root-padding: 1vw;
+@am-root-margin: 1vw;
 
-//== Colors
-// nice hex-to-rgb converter:: http://hex.colorrrs.com/
-
-// Primary
-@am-primary:  rgb(66, 139, 202); // #CEE1EF
-@am-primary-bg: lighten(@am-primary, 35%);
-
-// Secondary
+@am-primary: @am-clr-deep-orange-800;
 @am-secondary: lighten(@am-primary, 20%);
-@am-secondary-bg: lighten(@am-primary-bg, 6.5%);
+@am-closure: @am-clr-grey-800; // Gestalt Principles http://www.smashingmagazine.com/2014/03/28/design-principles-visual-perception-and-the-principles-of-gestalt/
 
-// Gestalt Principles
-// http://www.smashingmagazine.com/2014/03/28/design-principles-visual-perception-and-the-principles-of-gestalt/
-@am-closure: rgb(51,51,51); // #333333
+@am-clr-body-bg: @am-clr-white;
+@am-clr-primary-bg: lighten(@am-primary, 35%);
+@am-clr-secondary-bg: lighten(@am-clr-primary-bg, 6.5%);
+@am-clr-body-text: @am-clr-grey-800;
+@am-clr-heading-text: @am-clr-grey-800;
+@am-clr-hr: rgba(0, 0, 0, 0.12);
+@am-clr-link-text: darken(@am-primary, 6.5%);
+@am-clr-btn-bg: @am-clr-white;
+@am-clr-btn-text: @am-clr-black;
 
+@am-flex-width1: 8.3333%;
+@am-flex-width2: 25%;
+@am-flex-width3: 33.333%;
+@am-flex-width4: 50%;
+@am-flex-width5: 66.6667%;
+@am-flex-width6: 75%;
+@am-flex-width7: 100%;
+@am-flex-width-p1: 20%; // Vilfredo Pareto principle
+@am-flex-width-p2: 80%; // Vilfredo Pareto principle
 
+@am-nav-link-padding: 1em;
 
-//
-// Functional Variables
-// --------------------------------------------------
-@am-input-focus-border: rgb(102, 175, 233); // #66afe9
-@am-link-color: darken(@am-primary, 6.5%);
+@am-grid-gutter-margin: 1em;
+@am-grid-gutter-padding: 1em;
 
-// // viewport widths ensure vertical rhythm with white spacing and are only used on UI patterns for header, footer, nav, form, article & sections
-@am-padding: 1vw;
-@am-margin: 1vw;
+@am-btn-split-top: 25px;
+@am-btn-split-right: 25px;
+@am-btn-split-bottom: 25px;
+@am-btn-split-left: 25px;
+
